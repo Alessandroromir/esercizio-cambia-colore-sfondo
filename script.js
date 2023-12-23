@@ -1,16 +1,15 @@
 //Definire le variabili
-let color = document.getElementById("color")
+let colors = ["blueviolet", "steelblue"];
 let btn = document.getElementById("btn")
+let color = document.getElementById("color")
+let currentIndex = 0;
 
 
 //Dichiarare le funzioni
 
-function changeColor (){
-    color.style.setProperty("color",steelblue)
-    color.style.setProperty("color",blueviolet)
-    
-}
-
+function changeColor() {
+    color.style.backgroundColor = colors[currentIndex];
+    currentIndex = (currentIndex + 1) % colors.length;}
 
 
 //Eseguire le funzioni
